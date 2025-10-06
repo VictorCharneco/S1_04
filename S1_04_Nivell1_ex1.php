@@ -25,12 +25,15 @@ class empleat
         if($this->sou > 6000){
             echo "Hola ". $this->nom . ". Has de pagar l'impost. Son: " . self::IMPOST . "€" . ".\n";
         }else{
-            echo "Hola ". $this->nom . ". NO has de pagar cap impost";
+            echo "Hola ". $this->nom . ". NO has de pagar cap impost.";
         }
     }
 }
-$empleat1 = new empleat("Ruben", 7000);
-$empleat2 = new empleat("Victor", 1500);
 
+$empleat1 = new empleat("Ruben", 7000);
+$empleat1->impostApagar();
+echo "----------------\n";
+$empleat2 = new empleat("Victor", 1500);
+$empleat2->impostApagar();
 
 ?>
