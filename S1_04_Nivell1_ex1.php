@@ -4,6 +4,7 @@ class empleat
 {
     public $nom;
     public $sou;
+    const IMPOST = 28;
 
     public function __construct(string $nom, int $sou){
         $this->nom = $nom;
@@ -20,7 +21,16 @@ class empleat
         $this->sou = $sou;
     }
     
-
-
+    public function impostApagar(){
+        if($this->sou > 6000){
+            echo "Hola ". $this->nom . ". Has de pagar l'impost. Son: " . self::IMPOST . "€" . ".\n";
+        }else{
+            echo "Hola ". $this->nom . ". NO has de pagar cap impost";
+        }
+    }
 }
+$empleat1 = new empleat("Ruben", 7000);
+$empleat2 = new empleat("Victor", 1500);
+
+
 ?>
