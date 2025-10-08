@@ -10,11 +10,11 @@ class Shape{
     }
 
     public function getAmple(){
-        echo "Ample: $this->ample";
+        return "Ample: $this->ample";
     }
 
     public function getAlt(){
-        echo "Alt: $this->alt";
+        return "Alt: $this->alt";
     }
 
     public function setAmple(int $ample){
