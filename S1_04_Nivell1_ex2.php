@@ -24,17 +24,23 @@ class Shape{
     public function setAlt(int $alt){
         $this->alt = $alt;
     }
-
 }
 
+class Triangle extends Shape{
 
-class Triangel extends Shape{
-
-
+    public function calculAreaTriangle(){
+        $areaTriangle = ($this->ample * $this->alt) / 2;
+        echo "L'àrea del triangle és de: $areaTriangle";
+    }
 }
 
 class Rectangle extends Shape{
-    
+    public function calculAreaRectangle(){
+        $areaRectangle = $this->ample * $this->alt;
+        echo "L'àrea del triangle és de: $areaRectangle";
+    }
 }
+
+
 
 ?>
