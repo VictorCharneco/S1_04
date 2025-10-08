@@ -12,8 +12,8 @@ class empleat
     }
     
     public function getValue(){
-        echo "Nom: $this->nom";
-        echo "Sou: $this->sou";
+        return "Nom: $this->nom";
+        return "Sou: $this->sou";
     }
 
     public function setValue(string $nom, int $sou){
